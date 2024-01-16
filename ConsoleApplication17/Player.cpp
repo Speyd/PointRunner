@@ -27,11 +27,11 @@ void Player::FillCells(World& worldP)
         }
         else score++;
 
-        if (rand() % (100 - 1 + 1) + 1 <= 100)//Спавн бомб
+        if (rand() % (100 - 1 + 1) + 1 <= 15)//Спавн бомб
         {
             worldP.bombs.push_back(World::Bomb(heightCordinate, lengthCordinate));
             worldP.world[heightCordinate][lengthCordinate] = worldP.symbolBomb;
-            if(rand() % (100 - 1 + 1) + 1 <= 100)stunTime = 5;
+            if(rand() % (100 - 1 + 1) + 1 <= 20)stunTime = 2;
         }
         else if(rand() % (100 - 1 + 1) + 1 <= 10)//Доб монеты
         {

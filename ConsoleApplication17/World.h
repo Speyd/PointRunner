@@ -37,7 +37,7 @@ private:
     public:
 
         Bomb(const int lineP, const int columnP)
-            :line{ lineP }, column{ columnP }, timeBoom{ 10 } {}
+            :line{ lineP }, column{ columnP }, timeBoom{ 3 } {}
 
 
         Bomb& operator=(const Bomb& bomb)//Для работы erase
